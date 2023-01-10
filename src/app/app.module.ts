@@ -5,15 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
+import { SignupComponent } from './signup/signup.component';
+import { UserComponent } from './user/user.component'
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    MenuComponent,
+    SignupComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule,RouterModule.forRoot(ROUTES),
+    FormsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
