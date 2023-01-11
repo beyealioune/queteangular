@@ -9,14 +9,13 @@ import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { SignupComponent } from './signup/signup.component';
-import { UserComponent } from './user/user.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     MenuComponent,
     SignupComponent,
-    UserComponent
   ],
   imports: [
     BrowserModule,
